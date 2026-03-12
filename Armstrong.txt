@@ -16,7 +16,7 @@ while(i!=0){
 if(copy==rev){
   System.out.println(copy+"  is Armstrong number");
 else
-  System.out.println(copy+" is not Armstrong number");
+  System.out.println(copy+" is not Armstrong ");
 }
 }
 }
