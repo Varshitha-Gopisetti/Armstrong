@@ -1,13 +1,21 @@
-class Busy{
+class Armstrong{
 public static void main(String args[]){
-int n=457;
-if(n%10==7){
-   System.out.println(n+" is busy number");
- }
-if(n%7==0){
-     System.out.println(n+"  is busy number");
-   }
-else
-  System.out.println(n+"  is not busy number");
+
+for(int i=1;i<=20;i++){
+int copy=i,rev=0,count=0;
+while(i!=0){
+   count++;
+   i/=10;
+}
+i=copy;
+while(i!=0){
+  int rem=i%10;
+  rev+=(int)Math.pow(rem,count);
+  i/=10;
+}
+if(copy==rev){
+  System.out.println(copy+"  is Armstrong number");
+}
+}
 }
 }
